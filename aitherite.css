@@ -480,6 +480,53 @@ a:hover {
     float: none
 }
 
+
+
+/* Make the Global Freeleech bar more compact */
+
+.special-event-alert {
+    padding: 5px;
+}
+
+.special-event-alert > .alert__content {
+    width: 75%;
+    display:flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 512px) {
+    .special-event-alert > .alert__content {
+        width: 98%;
+    }
+}
+
+
+/* Chatbox-related changes */
+
+
+/* Remove extra line breaks in chat messages */
+.chatbox-message__content > div > br:nth-of-type(n+2) {
+    display: none;
+}
+
+/* More compact chat bubbles */
+
+.chatbox-message__content {
+    font-size: 14px;
+    padding: 0px 8px 4px 8px;
+}
+
+.chatbox-message__address {
+    font-size: 12px;
+}
+
+.chatroom__messages {
+    gap: 6px;
+}
+
+
+
+
 /* Aither Custom User Icons Stylesheet Add-On */
 
 /* Set size depending on where icons are displayed */
