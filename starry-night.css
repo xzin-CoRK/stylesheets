@@ -370,7 +370,7 @@
   font-family: 'Lobster';
   font-style: normal;
   font-weight: 400;
-  src: url('https://github.com/xzin-CoRK/stylesheets/raw/refs/heads/main/lobster-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('https://xzin-cork.github.io/stylesheets/lobster-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 .top-nav__site-logo {
     font-family: "Lobster", sans-serif;
