@@ -33,13 +33,13 @@
     --alert-fg: #aaa;
     --alert-gap-color: #0e111e;
     --alert-gap-width: 1px;
-    --article-card-bg: #2c2c2c;
+    --article-card-bg: #262c3c;
     --article-card-fg: #aaa;
     --article-card-head-fg: #aaa;
     --article-card-time-fg: #aaa;
     --article-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
     --bbcode-input-header-bg: #272727;
-    --bbcode-input-body-bg: #1e2433;
+    --bbcode-input-body-bg: #0c0f1b;
     --bbcode-input-border: 1px solid #555;
     --bbcode-input-border-radius: 5px;
     --bbcode-rendered-fg-default: #c9d1d9;
@@ -129,9 +129,9 @@
     --input-text-padding: 12px;
     --input-text-padding-active: 11px;
     --input-text-padding-hover: 11px;
-    --key-value-even-bg: #272727;
+    --key-value-even-bg: #141821;
     --key-value-fg: var(--text-color);
-    --key-value-odd-bg: #272727;
+    --key-value-odd-bg: #141821;
     --key-value-padding: 10px;
     --label-bg: #e2e2e2;
     --label-fg: #555;
@@ -206,18 +206,18 @@
     --prize-heading-fg: #bbb;
     --prize-icon-primary-color: mediumseagreen;
     --prize-icon-secondary-color: linen;
-    --post-bg: #2f3647;
+    --post-bg: #272D3D;
     --post-fg: #ccc;
     --post-shadow: none;
     --post-head-fg: var(--text-color);
     --post-head-bg: none;
-    --post-toolbar-bg: #272D3D;
+    --post-toolbar-bg: #2f3647;
     --post-toolbar-fg: #ccc;
     --post-toolbar-hover-bg: #262626;
     --post-toolbar-hover-fg: inherit;
     --post-like-fg: green;
     --post-dislike-fg: red;
-    --post-aside-bg: #272D3D;
+    --post-aside-bg: #2f3647;
     --post-aside-fg: #ccc;
     --post-footer-fg: var(--text-color);
     --quick-search-bg: #0c0f1b;
@@ -276,7 +276,7 @@
     --top-nav-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, .2);
     --top-nav-dropdown-fg: #bbb;
     --top-nav-dropdown-hover-fg: #eee;
-    --top-nav-dropdown-hover-bg: #404040;
+    --top-nav-dropdown-hover-bg: #1e2433;
     --top-nav-dropdown-hover-text-decoration: none;
     --top-nav-dropdown-menu-bg: #1e2433;
     --top-nav-dropdown-menu-border: none;
@@ -285,15 +285,15 @@
     --top-nav-dropdown-menu-item-fg: #bbb;
     --top-nav-dropdown-menu-item-bg: transparent;
     --top-nav-dropdown-menu-item-hover-fg: inherit;
-    --top-nav-dropdown-menu-item-hover-bg: #424242;
+    --top-nav-dropdown-menu-item-hover-bg: #2e3445;
     --top-nav-dropdown-menu-item-hover-text-decoration: none;
     --top-nav-dropdown-menu-item-icon-fg: #ccc;
-    --top-nav-dropdown-menu-item-icon-bg: #484848;
+    --top-nav-dropdown-menu-item-icon-bg: #262c3c;
     --top-nav-ratio-bar-fg: #ddd;
     --top-nav-icon-bar-icon-bg: #262c3c;
     --top-nav-icon-bar-icon-fg: #bbb;
     --top-nav-icon-bar-icon-border-radius: 50%;
-    --top-nav-icon-bar-icon-hover-bg: #424242;
+    --top-nav-icon-bar-icon-hover-bg: #1e2433;
     --top-nav-icon-bar-icon-hover-fg: #b6b6b6;
     --top-nav-stats-fg: #999;
     --top-nav-toggle-fg: #999;
@@ -314,7 +314,7 @@
     --torrent-group-chip-border: rgba(255, 255, 255, .05);
     --torrent-row-fg: #ccc;
     --torrent-row-visited-fg: #a295fe;
-    --torrent-row-sticky-bg: #404040;
+    --torrent-row-sticky-bg: #2e3445;
     --torrent-row-format-fg: #ccc;
     --torrent-row-format-bg: #3c3c3c;
     --torrent-row-buttons-fg: currentColor;
@@ -346,18 +346,34 @@
     --color-links-colored: #1771cb;
     --color-links-hover: #7f7d80
 }
-@font-face {
-  font-family: 'Winky Rough';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/winkyrough/v4/t5tzIRwIMoSXA0WSPBjQxJzjxc0_NyCBbx8bZyVePrhG2qW2z3-Xjrk.woff) format('woff');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+/* Override rounding from chatbox beautifier userscript */
+#chatbox_header {
+    border-radius: 5px !important;
+}
+/* Change input textbox backgrounds and animation */
+.form__text {
+    background-color: #0c0f1b;
+}
+.form__text:focus + label {
+    background-color: inherit;
+}
+.form__label--floating {
+    background-color: #0c0f1b;
 }
 
+/* Fix manual styling on automod headers */
+.page__torrent--show .panelV2 table.data-table td[colspan="2"] {
+    background-color: #141821 !important;
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://github.com/xzin-CoRK/stylesheets/raw/refs/heads/main/lobster-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 .top-nav__site-logo {
-    font-family: 'Winky Rough', sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
