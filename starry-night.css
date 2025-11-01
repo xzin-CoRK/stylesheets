@@ -55,7 +55,7 @@
     --bbcode-rendered-attention-subtle: #7289da;
     --bbcode-rendered-danger-fg: #ff141ccc;
     --bbcode-rendered-quote-bg: #6662;
-    --bbcode-rendered-quote-border: var(--color-green);
+    --bbcode-rendered-quote-border: #4A4D56;
     --body-bg: #232323;
     --body-fg: var(--text-color);
     --breadcrumb-fg: #777;
@@ -172,7 +172,7 @@
     --meter-fg: #333;
     --meter-bg: #505050;
     --notification-read: transparent;
-    --notification-unread: var(--color-green);
+    --notification-unread: #4A4D56;
     --option-bg: #303030;
     --option-fg: #999;
     --paginate-bg: #1c1c1c;
@@ -351,12 +351,23 @@
     border-radius: 5px !important;
 }
 /* Change input textbox backgrounds and animation */
-.form__text {
+.form__text,
+.form__textarea,
+.form__select {
     background-color: #0c0f1b;
 }
-.form__text:focus + label {
+.form__text:focus + label,
+.form__select + label {
     background-color: inherit;
+    border: 1px solid #555;
+    border-radius: 2px !important;
 }
+.form__textarea:focus + label {
+    background-color: #1e2433;
+    border: 1px solid #555;
+    border-radius: 2px !important;
+}
+
 .form__label--floating {
     background-color: #0c0f1b;
 }
@@ -365,18 +376,7 @@
 .page__torrent--show .panelV2 table.data-table td[colspan="2"] {
     background-color: #141821 !important;
 }
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: url('https://xzin-cork.github.io/stylesheets/lobster-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-.top-nav__site-logo {
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+
 .footer__section-title {
     font-weight: 600;
 }
