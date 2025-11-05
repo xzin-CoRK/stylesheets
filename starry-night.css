@@ -362,7 +362,9 @@
     border: 1px solid #555;
     border-radius: 2px !important;
 }
-.form__textarea:focus + label {
+/* Show border around input placeholder text only when input placeholder is in upper position */
+.form__textarea:focus + label,
+select:has(option:checked:not([value=""])) + .form__label:not(:empty) {
     background-color: #1e2433;
     border: 1px solid #555;
     border-radius: 2px !important;
