@@ -316,7 +316,7 @@
     --torrent-row-visited-fg: #a295fe;
     --torrent-row-sticky-bg: #2e3445;
     --torrent-row-format-fg: #ccc;
-    --torrent-row-format-bg: #3c3c3c;
+    --torrent-row-format-bg: inherit;
     --torrent-row-buttons-fg: currentColor;
     --torrent-row-seeders-fg: #3fb618;
     --torrent-row-leechers-fg: #996666;
