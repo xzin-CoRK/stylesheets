@@ -357,9 +357,8 @@
 .form__select {
     background-color: #0c0f1b;
 }
-.form__text:focus + label,
-.form__select + label {
-    background-color: inherit;
+.form__text:focus + label {
+    background-color: #0c0f1b;
     border: 1px solid #555;
     border-radius: 2px !important;
 }
