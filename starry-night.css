@@ -90,12 +90,12 @@
     --data-table-tr-hover-bg: #2e3445;
     --data-table-tr-odd-bg: #1e2433;
     --data-table-tfoot-border: none;
-    --dialog-bg: #272727;
+    --dialog-bg: #1e2433;
     --dialog-border: none;
     --dialog-border-radius: 10px;
     --dialog-box-shadow: none;
     --dialog-fg: var(--text-color);
-    --dialog-head-bg: #1c1c1c;
+    --dialog-head-bg: #0e111d;
     --dialog-head-fg: #fff;
     --donation-border-color: #1c1c1c;
     --donation-box-shadow-color: #1c1c1c;
@@ -175,7 +175,7 @@
     --notification-unread: #4A4D56;
     --option-bg: #303030;
     --option-fg: #999;
-    --paginate-bg: #1c1c1c;
+    --paginate-bg: #141821;
     --paginate-bg-hover: #222;
     --paginate-bg-current: #202020;
     --paginate-fg: #888;
@@ -344,7 +344,8 @@
     --user-stat-card-box-shadow: none;
     --codeblock-background: #F9F2F4;
     --color-links-colored: #1771cb;
-    --color-links-hover: #7f7d80
+    --color-links-hover: #7f7d80;
+    --compact-search-bg: #1e2433;
 }
 /* Override rounding from chatbox beautifier userscript */
 #chatbox_header {
@@ -375,6 +376,37 @@
 /* Fix manual styling on automod headers */
 .page__torrent--show .panelV2 table.data-table td[colspan="2"] {
     background-color: #141821 !important;
+}
+
+/* Add border to whole dialog popup (panel+header), not just panel */
+.dialog {
+    border: 1px solid #3a4055;
+}
+
+/* Add border to compant search on torrent & request pace */
+.compact-search {
+    border: 1px solid #3a4055;
+}
+
+/* Fix region and distributor multiselect styling */
+.vscomp-toggle-button {
+    background-color: #0c0f1b;
+    border-radius: 5px;
+    border: var(--input-text-border);
+    color: var(--input-text-fg);
+    font-weight: 400;
+}
+.vscomp-option {
+    background-color: #1e2433;
+}
+.vscomp-option.focused {
+    background-color: #2e3445;
+}
+.pop-comp-wrapper{
+    color: var(--input-text-fg)
+}
+.vscomp-search-container {
+    background-color: #0c0f1b;
 }
 
 .footer__section-title {
