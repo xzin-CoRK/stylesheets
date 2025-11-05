@@ -274,7 +274,7 @@
     --textarea-padding-hover: 11px;
     --top-nav-bg: #2e3445;
     --top-nav-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, .2);
-    --top-nav-dropdown-fg: #bbb;
+    --top-nav-dropdown-fg: #eee;
     --top-nav-dropdown-hover-fg: #eee;
     --top-nav-dropdown-hover-bg: #1e2433;
     --top-nav-dropdown-hover-text-decoration: none;
@@ -343,8 +343,8 @@
     --user-stat-card-border-radius: 5px;
     --user-stat-card-box-shadow: none;
     --codeblock-background: #F9F2F4;
-    --color-links-colored: #1771cb;
-    --color-links-hover: #7f7d80;
+    --color-links-colored: #626E93;
+    --color-links-hover: #858FAD;
     --compact-search-bg: #1e2433;
 }
 /* Override rounding from chatbox beautifier userscript */
