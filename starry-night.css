@@ -58,8 +58,8 @@
     --bbcode-rendered-quote-border: #4A4D56;
     --body-bg: #232323;
     --body-fg: var(--text-color);
-    --breadcrumb-fg: #777;
-    --breadcrumb-active-fg: #aaa;
+    --breadcrumb-fg: #aaa;
+    --breadcrumb-active-fg: #ccc;
     --breadcrumb-hover-fg: #ddd;
     --breadcrumb-inactive-text-decoration: none;
     --button-filled-bg: #586379;
@@ -351,6 +351,12 @@
 #chatbox_header {
     border-radius: 5px !important;
 }
+
+/* Fix extra stats background color */
+.page__stats--index .panelV2 {
+    background-color: #141822;
+}
+
 /* Change input textbox backgrounds and animation */
 .form__text,
 .form__textarea,
