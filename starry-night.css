@@ -357,6 +357,19 @@
     background-color: #141822;
 }
 
+/* Make notifications less intrusive */
+.top-nav svg > circle:last-child {
+    fill: #858FAD;
+}
+.top-nav svg > circle:first-child {
+    stroke: #858FAD;
+}
+
+/* Line wrap on code blocks */
+.bbcode-rendered.bbcode-rendered pre code {
+    text-wrap: auto;
+}
+
 /* Change input textbox backgrounds and animation */
 .form__text,
 .form__textarea,
