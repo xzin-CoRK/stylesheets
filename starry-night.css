@@ -367,7 +367,7 @@
 
 /* Line wrap on code blocks */
 .bbcode-rendered.bbcode-rendered pre code {
-    text-wrap: auto;
+    text-wrap: wrap;
 }
 
 /* Change input textbox backgrounds and animation */
@@ -406,6 +406,11 @@ select:has(option:checked:not([value=""])) + .form__label:not(:empty) {
 /* Add border to compant search on torrent & request pace */
 .compact-search {
     border: 1px solid #3a4055;
+}
+
+/* Change background color on dropdowns */
+.form__select option {
+  background-color: #0c0f1b;
 }
 
 /* Fix region and distributor multiselect styling */
