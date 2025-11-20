@@ -413,6 +413,22 @@ select:has(option:checked:not([value=""])) + .form__label:not(:empty) {
   background-color: #0c0f1b;
 }
 
+/* Change toast background color */
+div.swal2-modal,
+div.swal2-toast {
+    background-color: #1e2332;
+    border-top: 1px solid #1b1f29;
+    border-left: 1px solid #1b1f29;
+    color: #ccc;
+    box-shadow: 3px 5px #0e111d;
+}
+button.swal2-confirm {
+    background-color: #586379;
+}
+button.swal2-cancel {
+    background-color: #7a6652;
+}
+
 /* Fix region and distributor multiselect styling */
 .vscomp-toggle-button {
     background-color: #0c0f1b;
