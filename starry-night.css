@@ -429,6 +429,13 @@ button.swal2-cancel {
     background-color: #7a6652;
 }
 
+/* Make outage alerts slightly smaller */
+.alert__statuspage-status {
+    padding: 4px;
+    font-size: 15px;
+    background-color: #9B3750 !important;
+}
+
 /* Fix region and distributor multiselect styling */
 .vscomp-toggle-button {
     background-color: #0c0f1b;
