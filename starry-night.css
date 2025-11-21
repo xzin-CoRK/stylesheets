@@ -346,6 +346,7 @@
     --color-links-colored: #626E93;
     --color-links-hover: #858FAD;
     --compact-search-bg: #1e2433;
+    --bbcode-input-bg: #1e2433;
 }
 /* Override rounding from chatbox beautifier userscript */
 #chatbox_header {
