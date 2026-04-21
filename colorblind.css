@@ -1,8 +1,10 @@
 :root {
     main.page__user-torrents--index td.user-torrents__seedtime span.text-red::before {
-        content: "❌"
+        font-family: FontAwesome;
+        content: "\f00d";
     }
     main.page__user-torrents--index td.user-torrents__seedtime span.text-green::before {
-        content: "✔"
+        font-family: FontAwesome;
+        content: "\f00c";
     }
 }
