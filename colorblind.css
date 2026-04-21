@@ -1,0 +1,8 @@
+:root {
+    main.page__user-torrents--index td.user-torrents__seedtime span.text-red::before {
+        content: "❌"
+    }
+    main.page__user-torrents--index td.user-torrents__seedtime span.text-green::before {
+        content: "✔"
+    }
+}
